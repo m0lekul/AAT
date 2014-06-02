@@ -46,6 +46,9 @@ public class MainActivity extends ActionBarActivity {
         
         File dir = new File("/data/data/com.example.test/");
         final String items[]= dir.list();
+        //if items empty
+        //Afficher bouton creer un serveur pointant sur formulaire de creation de fichier de conf
+        //else affichage de listview
         list.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,items));
         
         
